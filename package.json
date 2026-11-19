@@ -1,0 +1,38 @@
+{
+  "name": "dsh-my-rules",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "个人规则文件插件：一条规则一个 Markdown 文件，随时自由编辑、增删、停用；生效中的规则会注入到每个会话的系统提示词里，所有会话都必须遵守。规则目录默认 ~/.dsh/my-rules/，也可以用 /myrules 命令或让 Agent 代为增删。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./rules-api.js": "./rules-api.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "rules-core.js",
+    "rules-api.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": ["dsh", "dsh-plugin", "rules", "system-prompt", "productivity"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyz48prsbr/dsh-my-rules.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "My rules",
+    "description": "Personal rule files: one rule per Markdown file, freely edited, added, disabled or deleted. Enabled rules are injected into every session's system prompt and must be followed. The rules directory defaults to ~/.dsh/my-rules/ and can also be managed with the /myrules command or by asking the agent."
+  }
+}

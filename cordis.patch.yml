@@ -1,0 +1,12 @@
+# Inserts this bundle's own Host row. Every field is optional; the row
+# id matches the package name so the Plugins page can configure it.
+- insert:
+    - id: dsh-my-rules
+      name: 'dsh-my-rules'
+      config:
+        # Directory that holds one Markdown file per rule.
+        dir: ''
+        # Byte budget for the injected rules section.
+        maxBytes: 16384
+        # Seed the built-in starter rules when the directory holds no rule yet.
+        seed: true
